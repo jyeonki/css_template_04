@@ -194,7 +194,7 @@ section.main .main-title .view::after {
     left: 0;
     top: 0;
 
-     transition: 0.3s;
+    transition: 0.3s;
 }
 section.main .main-title .view:hover::after {
     /*  view에 커서가 올라갔을 때 나타나야하므로 hover::after 순서이다 */
@@ -419,4 +419,92 @@ section.me ul.list ul.in li p::before {
 
     /* reset css가 다 reset시켜서 버튼에 커서를 가져가도 손모양이 뜨지 않는다, 그래서 수동으로 설정 */
     cursor: pointer;
+}
+
+/* section sns style */
+section.sns {
+    margin-bottom: 60px;
+}
+section.sns ul {
+    width: 74%;
+    margin: 50px auto;
+}
+section.sns ul li{
+    /* border: 1px solid #000; */
+    /* box-sizing: border-box; */
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+}
+section.sns ul li:last-child {
+    margin-right: 0;
+}    
+section.sns ul li .img-box {
+    height: 225px;
+    overflow: hidden;
+
+    position: relative;
+}
+section.sns ul li .img-box::before {
+    content: '';
+    /* width: 100%; */
+    width: 0;
+    height: 100%;
+    background: rgba(255, 131, 66, 0.75);
+    position: absolute;
+
+    transition: 0.5s;
+}
+section.sns ul li a:hover .img-box::before {
+    width: 100%;
+}
+section.sns ul li .img-box::after {
+    content:'BLOG';
+    font-size: 15px;
+    font-family: 'EXO 2', sans-serif;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    padding: 5px 30px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.7s;
+}
+section.sns ul li a:hover .img-box::after {
+    opacity: 1;
+}
+section.sns ul li .img-box img {
+    width: 100%;
+}
+/* section.sns ul li:nth-child(2) .img-box {
+    position: relative;
+}
+section.sns ul li:nth-child(2) .img-box img {
+    position: absolute;
+    top: -40px;
+} */
+section.sns ul li .bottom {
+    padding: 20px 0 20px 30px;
+    box-sizing: border-box;
+}
+section.sns ul li .bottom p {
+    font-size: 18px;
+}
+section.sns ul li .bottom p.color {
+    color: #ff8342;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+section.sns ul li .bottom p.time {
+    color: #999;
+    font-size: 14px;
+    margin-top: 30px;
+}
+section.sns ul li .bottom p.time i {
+    margin-right: 5px;
+    font-size: 0.9em;
 }
