@@ -344,7 +344,7 @@ section.me ul.list {
 }
 section.me ul.list > li {
     /* li 자식들말고 li만 선택하고 싶을 때: > 직속자식 쓰기 */
-    padding: 30px 50px;
+    padding: 30px 60px;
     /* border: 1px solid #000; */
 }
 section.me ul.list > li:first-child {
@@ -377,9 +377,9 @@ section.me ul.list > li .more span {
     margin-left: 3px;
     font-size: 14px;
 }
-/* section.me ul.list ul.in {
-    margin-bottom: 50px;
-} */
+section.me ul.list ul.in {
+    margin-bottom: 30px;
+}
 section.me ul.list ul.in li em {
     float: left;
     font-weight: 700;
