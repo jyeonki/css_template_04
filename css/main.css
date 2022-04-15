@@ -201,3 +201,84 @@ section.main .main-title .view:hover::after {
     width: 100%;
 }
 
+/* section about style */
+section.about {
+    /* background: orange; */
+    padding: 80px 0;
+}
+section .title {
+    /* section .title 비슷한 부분 한 번에 스타일 설정하기 */
+    text-align: center;
+}
+section .title h2 {
+    font-size: 45px;
+    color: #000;
+    margin-bottom: 5px;
+}
+section .title p {
+    font-size: 18px;
+    color: #555;
+}
+
+section.about ul {
+    width: 74%;
+    margin: 30px auto;
+    /* background: orange; */
+    border-bottom: 1px solid #ddd;
+}
+section.about ul li {
+    float: left;
+    width: 33.33333%;
+    /* border: 2px solid #000; */
+    /* box-sizing: border-box;  */
+}
+section.about ul li .img-box {
+    /* 그림이 커졌을 때 영역을 벗어나므로 */
+    overflow: hidden;
+}
+section.about ul li .img-box img {
+    width: 100%;
+    transition: 0.6s;
+}
+section.about ul li a:hover .img-box img {
+    /* 링크에 마우스 커서를 가져갔을 때 그림이 커진다 */
+    transform: scale(1.2);
+}
+section.about ul li a .text {
+    padding: 25px;
+}
+section.about ul li a .text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+section.about ul li a .text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+section.about ul li a .text p.more {
+    /* 일괄 대소문자 변경 <-> lowercase*/
+    text-transform: uppercase;
+    font-weight: 700;
+    /* background: skyblue; */
+
+    /* 화살표 들어갈 공간 확보 */
+    padding-left: 40px;
+
+    position: relative;
+}
+section.about ul li a .text p.more::before {
+    content: '→';
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #ff8342;
+    border-radius: 50%; /* 동그라미가 된다*/
+
+    position: absolute;
+    left: 0;
+    top: -6px;
+}
+
+
+
